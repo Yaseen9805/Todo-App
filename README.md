@@ -1,55 +1,44 @@
----
+# Todo App
 
-# 📝 Todo App
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
 
-A simple and responsive Todo application built with **HTML, CSS, and JavaScript**. It allows users to create, update, and delete tasks with persistent storage using `localStorage`.
+## Short description
 
----
+A responsive todo app built with plain HTML, CSS, and JavaScript. Add tasks with an optional date and description, edit or delete them later, and everything is saved in the browser with localStorage.
 
-## 🚀 Features
+## Technologies
 
-* Add, edit, and delete tasks
-* Optional date and description for each task
-* Confirmation dialog for unsaved changes
-* Data persistence using `localStorage`
-* Clean and interactive UI
+HTML5, CSS3, JavaScript (DOM manipulation, localStorage)
 
----
+## Features
 
-## 🛠 Tech Stack
+- Add new tasks with a required title, plus an optional date and description
+- Edit an existing task's details
+- Delete tasks you no longer need
+- A confirmation dialog before discarding unsaved changes
+- All data persists across page reloads using localStorage
 
-* HTML5
-* CSS3
-* JavaScript (DOM Manipulation, Local Storage)
+## The process
 
----
+This went a step beyond a basic add/delete list by supporting full editing and optional fields per task, which meant the form had to handle both "creating a new task" and "editing an existing one" without becoming two separate pieces of code. Adding a confirmation step for unsaved changes was a smaller but useful addition, so closing the form accidentally doesn't silently lose whatever was typed.
 
-## ⚙️ How It Works
+## What I learned
 
-* Click **“Add New Task”** to open the form
-* Enter title (required), date, and description
-* Tasks are saved and displayed instantly
-* Edit or delete tasks as needed
-* All data is stored in the browser
+- Structuring a form that can both create and edit an item, depending on context
+- Validating required vs. optional fields before saving
+- Persisting structured task data (not just plain strings) to localStorage as JSON
+- Prompting for confirmation before a potentially destructive action like discarding changes
 
----
+## How it can be improved
 
-## ▶️ Run Locally
+- Add the ability to mark tasks as completed
+- Add filters to view completed vs. pending tasks
+- Support drag-and-drop reordering of tasks
+- Add search to quickly find a specific task
 
-```bash id="cfxbl3"
-git clone https://github.com/your-username/todo-app.git
-cd todo-app
-```
+## How to run the project
 
-Open `index.html` in your browser.
-
----
-
-## 📌 Future Improvements
-
-* Mark tasks as completed
-* Add filters (completed / pending)
-* Drag-and-drop task sorting
-* Search functionality
-
----
+1. Clone the repo
+2. Open `index.html` directly in your browser
